@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nithin Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Noto+Serif:ital@1&family=Poppins:wght@400;700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        font-family: "Poppins", sans-serif;
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(11, 11, 62);
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      nav ul li {
+        margin: 0 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(71, 172, 222);
+        font-size: 1.02rem;
+      }
+
+      .left {
+        font-size: 2rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 70px 0;
+      }
+      .firstsection > div {
+        width: 40%;
+      }
+      .leftsection {
+        font-size: 3rem;
+      }
+      .leftsection .btn-1 {
+        padding: 10px;
+        background-color: #3214c8;
+        border: 1.9px solid white;
+        color: white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        
+      }
+      .leftsection .btn-2 {
+        padding: 10px;
+        background-color: #3214c8;
+        border: 1.9px solid white;
+        color: white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        
+      }
+      .leftsection .buttons {
+        padding: 50px 15px;
+        
+        
+      }
+      .rightsection img {
+        width: 80%;
+      }
+      .purple {
+        color: #2ca0df;
+      }
+      #element {
+        color: #2ca0df;
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+      main hr {
+        border: 0;
+        margin: 60px 84px;
+        background-color: #9c97f1;
+        height: 1.2px;
+      }
+      .secondsection .box {
+        background-color: white;
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .verticle {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 12vw;
+      }
+      .icons {
+        width: 25px;
+        position: relative;
+        top: -35px;
+        left: -10px;
+      }
+
+      .verticle-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .verticle-desc {
+        position: relative;
+        top: 89px;
+        width: 150px;
+        color: gray;
+        font-size: 10px;
+      }
+      footer {
+        background-color: #0e0e1a;
+        height: 233px;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      footer ul {
+        list-style: none;
+      }
+      .foooter > div {
+        width: 223px;
+      }
+      .footer-rights {
+        color: gray;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .footer ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      
+      
+      @media screen and (max-width: 1400px) {
+        .firstsection {
+          flex-direction: column-reverse;
+        }
+        
+        .box {
+          flex-direction: column;
+        }
+        .secondsection .verticle {
+          height: unset;
+        }
+        .verticle-title {
+          left: 45px;
+        }
+        .verticle-desc {
+          left: 45px;
+        }
+        .secondsection .box {
+          width: 50vw;
+        }
+        nav {
+          flex-direction: column;
+        }
+        .leftsection {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .rightsection {
+          width: 721px !important;
+          display: flex;
+          justify-content: center;
+        }
+        .rightsection img {
+          width: 45vw;
+          margin-bottom: 73px;
+        }
+        .secondsection {
+          max-width: 80vw;
+          margin: auto;
+          height: 80vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .secondsection {
+          max-width: 80vw;
+          margin: auto;
+          height: 141vh;
+        }
+        body {
+          min-width: fit-content;
+        }
+        .icons {
+          top: 133px;
+        }
+      }
+    </style>
+    <script>
+        function download() {
+            window.open("https://drive.google.com/file/d/1tyo4ElXiRe3hnN4L1M8iLiJwAN4SlYgr/view?usp=drive_link")
+        }
+
+        function github() {
+            window.open("https://github.com/MeesalaNithin1234")
+        }
+
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Nithin's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="https://meesalanithin1234.github.io/Personalcv/">About</a></li>
+            <li><a href="https://github.com/MeesalaNithin1234?tab=repositories">Projects</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="">Services</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          <div>Hi, My name is <span class="purple">Nithin</span></div>
+          <div>and I am a Passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+                <button class="btn-1" onclick="download()">Download Resume</button>
+                <button class="btn-2" onclick="github()">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="Sft.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="verticle">
+            <img class="icons" src="html-logo.png" alt="" />
+            <div class="verticle-title">HTML Developer</div>
+            <div class="verticle-desc">
+              During my 3-month tenure as a freelance HTML developer, I gained
+              invaluable hands-on experience in crafting dynamic and visually
+              appealing web content. I collaborated with a diverse range of
+              clients to bring their visions to life, effectively translating
+              their ideas into functional and engaging websites
+            </div>
+          </div>
+
+          <div class="verticle">
+            <img class="icons" src="frontend.jpg" alt="" />
+            <div class="verticle-title">Frontend Intern - PHN Technologies</div>
+            <div class="verticle-desc">
+              Worked as a Web developer Intern in Phn technologies , Wrote and
+              reviewed code for Front end Websites Developing Interactive,
+              Scalable, Brand-Oriented, and business-ready custom web
+              solutions.Helped to provide expert web application development and
+              web design services according to the clients requirements
+            </div>
+          </div>
+          <div class="verticle">
+            <img class="icons" src="gdsc.jpg" alt="" />
+            <div class="verticle-title">GoogleDeveloperStudentClub</div>
+            <div class="verticle-desc">
+              I am thrilled to reflect on my enriching journey as an active
+              member of the Google Developer Student Clubs (GDSC) at GDSC GNI,
+              coupled with the accomplishment of successfully completing the
+              Google Cloud Computing Professional (GCCP) course. As a GDSC
+              member, I Collaborated with team members on various projects,
+              workshops, and events, I engaged in hands-on learning experiences
+              that extended beyond the classroom.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Nithin's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="https://meesalanithin1234.github.io/Personalcv/">About</a></li>
+                <li><a href="https://github.com/MeesalaNithin1234?tab=repositories">Projects</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+                <li><a href="">Services</a></li>
+              </ul>
+        </div>
+        <div class="footer-third">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="https://meesalanithin1234.github.io/Personalcv/">About</a></li>
+                <li><a href="https://github.com/MeesalaNithin1234?tab=repositories">Projects</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+                <li><a href="">Services</a></li>
+              </ul>
+        </div>
+        <div class="footer-fourth">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="https://meesalanithin1234.github.io/Personalcv/">About</a></li>
+                <li><a href="https://github.com/MeesalaNithin1234?tab=repositories">Projects</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+                <li><a href="">Services</a></li>
+              </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright&#169;Nithin'sPortfolio.com | All Rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer.",
+          "Coder.",
+          "Esports Athelte.",
+          "Web Developer.",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
